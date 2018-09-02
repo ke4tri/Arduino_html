@@ -1,11 +1,15 @@
 #include <ESP8266WiFi.h>
- 
+
+
 const char* ssid = "NETGEAR85";
 const char* password = "yellowmango727";
  
 int ledPin = D7; // GPIO13
 WiFiServer server(80);
- 
+
+// below adding youtube server html code
+
+
 void setup() {
   Serial.begin(115200);
   delay(10);
@@ -72,6 +76,9 @@ void loop() {
  
 // Set ledPin according to the request
 //digitalWrite(ledPin, value);
+
+
+
  
   // Return the response
   client.println("HTTP/1.1 200 OK");
@@ -80,7 +87,7 @@ void loop() {
   client.println("<!DOCTYPE HTML>");
   client.println("<html>");
  
-  client.print("Led pin is now: ");
+  client.print("Led pin is now: "); 
  
   if(value == HIGH) {
     client.print("On");
@@ -92,8 +99,7 @@ void loop() {
   client.println("<a href=\"/LED=OFF\"\"><button>Turn Off </button></a><br />");  
   client.println("<a href=\"/LED=ON\"\"><button>Forward </button></a>");
   client.println("<a href=\"/LED=OFF\"\"><button>Backward </button></a><br />");
-  
-  client.println("<p>'This is a line of code that I am lookin to see if works</p>");
+//  client.println("<body><p>'This is a line of code that I am lookin to see if works</p></body>");
   client.println("</html>");
   
  
