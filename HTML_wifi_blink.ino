@@ -93,7 +93,7 @@ void loop() {
   client.println("<a href=\"/LED=ON\"\"><button>Forward </button></a>");
   client.println("<a href=\"/LED=OFF\"\"><button>Backward </button></a><br />");
   
-  client.println("<p>'This is a line of code that I am lookin to see if works</p>");
+  client.println("<body><p>'This is a line of code that I am lookin to see if works</p></body>");
   client.println("</html>");
   
  
