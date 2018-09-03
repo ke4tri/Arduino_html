@@ -46,7 +46,7 @@ void setup() {
  
 void loop() {
   // Check if a client has connected
-  WiFiClient client = server.available();
+  WiFiClient client = server.available(); // This is calling Wifi client out
   if (!client) {
     return;
   }
@@ -100,11 +100,10 @@ void loop() {
   client.println("<a href=\"/LED=ON\"\"><button>Forward </button></a>");
   client.println("<a href=\"/LED=OFF\"\"><button>Backward </button></a><br />");
 <<<<<<< HEAD
-//  client.println("<body><p>'This is a line of code that I am lookin to see if works</p></body>");
+
 =======
   
-  client.println("<body><p>'This is a line of code that I am lookin to see if works</p></body>");
->>>>>>> bde56ab243c9be7fdbe4d26f5fa1888ac9ef5072
+ >>>>>> bde56ab243c9be7fdbe4d26f5fa1888ac9ef5072
   client.println("</html>");
   
  

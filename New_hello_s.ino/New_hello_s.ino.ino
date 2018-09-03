@@ -4,11 +4,11 @@
 #include <ESP8266mDNS.h>
 
 const char index_html[] PROGMEM={"<html>\n"
-"<body>\n"
+"<body style=\"background-color: yellow;\">\n"
 " <h3>This is an 3 test</h3>\n"
 "\t<ul>\n"
-"\t   <li>This is a list test!</li>\n"
-"\t   <li>This is a list test!</li>\n"
+"\t<a href=\"LED=ON\"><button>Turn On </button></a>\n"
+"        <a href=\"LED=OFF\"><button>Turn Off </button></a><br />\n"
 "\t</ul>\n"
 "</body>\n"
 "</html>\n"
@@ -66,7 +66,7 @@ void setup(void) {
   if (MDNS.begin("esp8266")) {
     Serial.println("MDNS responder started");
   }
-
+ 
   server.on("/", handleRoot);
 
   server.on("/inline", []() {
@@ -78,7 +78,8 @@ void setup(void) {
   server.begin();
   Serial.println("HTTP server started");
 }
-
 void loop(void) {
-  server.handleClient();
+server.handleClient();
 }
+
+
