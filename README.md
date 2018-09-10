@@ -1,1 +1,1 @@
-# Arduino browser controled LED with NodeMcu V3. This will be an on off switch/controler for a hardware device. 
+# Arduino browser controled LED with NodeMcu V3. This will be an on off switch/controler for a hardware device. This is just going to be a collection of fragmented code files to help program a web based/controled drone. 
