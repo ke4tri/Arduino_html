@@ -2,7 +2,7 @@
 
 
 const char* ssid = "NETGEAR85";
-const char* password = "yellowmango727";
+const char* password = "your_password";
  
 int ledPin = D7; // GPIO13
 WiFiServer server(80);

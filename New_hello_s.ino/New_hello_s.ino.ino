@@ -15,7 +15,7 @@ const char index_html[] PROGMEM={"<html>\n"
 ""};
 
 const char* ssid = "NETGEAR85";
-const char* password = "yellowmango727";
+const char* password = "your_password";
 
 ESP8266WebServer server(80);
 
