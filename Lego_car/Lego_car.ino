@@ -26,6 +26,17 @@ bool clockwise = true;
 int targetSteps = 2048;  //2048 steps per rotation when wave or full stepping
 //int targetSteps = 4096;  //4096 steps per rotation when half stepping
 
+// TRY AND WRITE A FUNCTION THAT WILL BE CALLED AND RUN BOTH MOTORS
+// AT THE SAMETIME
+
+
+//for(int s=0; s<step_step_360; s++){
+//    myStepper1.step(1);
+//    myStepper2.step(1);
+//  }
+
+
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);  
